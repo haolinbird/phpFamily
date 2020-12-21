@@ -1,0 +1,14 @@
+{"name":"Thrift",
+    "type":"Library",
+    "description":"Jumei Thrift协议的客户端 ",
+    "config":{"vendor-dir": "Vendor"},
+    "repositories":[{"packagist":false},
+        {"type": "composer",
+            "url": "https://packagist.int.jumei.com/"
+        }
+    ],
+    "require":{
+        "MNLogger":"0.4.2",
+        "PHPClient":"1.3.5"
+    }
+}

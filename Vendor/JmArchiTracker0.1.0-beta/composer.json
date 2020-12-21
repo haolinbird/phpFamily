@@ -1,0 +1,14 @@
+{
+    "name":"JmArchiTracker",
+    "type":"Library",
+    "description":"环境变量初始化",
+    "config":{"vendor-dir": "Vendor"},
+    "repositories":[{
+            "packagist":false
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.int.jumei.com/"
+        }
+    ]
+}

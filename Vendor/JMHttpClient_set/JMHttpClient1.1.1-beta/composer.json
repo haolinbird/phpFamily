@@ -1,0 +1,16 @@
+{
+    "name": "JMHttpClient",
+    "type": "Library",
+    "config": {
+        "vendor-dir": "Vendor"
+    },
+    "authors": [
+        {
+            "name": "xianwang song",
+            "email": "xianwang.song@qq.com"
+        }
+    ],
+    "require": {
+        "MNLogger": "0.5.*"
+    }
+}

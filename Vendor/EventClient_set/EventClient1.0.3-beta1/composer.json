@@ -1,0 +1,25 @@
+{"name": "EventClient",
+ "description": "消息中心客户端",
+ "authors": [{"name":"粟超", "email": "chaos@jumei.com"}], 
+ "type":"library",
+ "config":{"vendor-dir": "Vendor"}
+ ,
+ "repositories":[{"packagist":false},
+ 		 {"type": "composer",
+		  "url": "http://packagist.int.jumei.com/"
+		  }
+ ],
+  "scripts":{
+    "post-update-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php",
+    "post-install-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php"
+  },
+
+  "require":{
+     "php":">=5.3.0",
+     "PHPClient": ">=1.2.7"
+  },
+  "require-dev":{
+    "Bootstrap":">=1.0.0",
+    "PHPClient": ">=1.2.7"
+  }
+}

@@ -1,0 +1,41 @@
+#logo #home{padding-top:18px;height:67px;}
+#address_table02 .sp_icon,#address_table02 .sp_icon .sp_icon_pos div{background:url(/assets/images/jumei/global/tip_coin.png) no-repeat;}
+#address_table02 .sp_icon{width:auto;padding-left:15px;font-size:12px;line-height:12px;}
+#address_table02 .sp_icon .sp_icon_pos{width:500px;top:30px;left:-400px;}
+#address_table02 .sp_icon .sp_icon_pos div{left:442px;top:-6px;background-position:0 -16px;width:13px;height:6px;}
+
+#cart .cart_left #address_selector .content .address_lbl{height:118px;border:none;background:url(/assets/images/jumei/global/address_bg.png) no-repeat -225px 0;width:195px;}
+#cart .cart_left #address_selector .content .option_box, #cart .cart_left #address_selector .content .option_box_new, #cart .cart_left #address_selector .content .option_box_old{height:148px;}
+#cart .cart_left #address_selector .content div.selected .address_lbl{background:url(/assets/images/jumei/global/address_bg.png) no-repeat 0px 0;height:118px;}
+.id_wrap{color:#ed145b;line-height:14px;}
+.id_wrap span{padding-left:18px;line-height:14px;display:inline-block;background:url(/assets/images/jumei/global/id_coin.png) no-repeat;color:#666;}
+
+#accredit_content{width:510px;background: #FAF7F8}
+.accredit_header{height: 52px;border-bottom: 1px solid #EEEBEC;}
+.accredit_content{height: 250px;padding:10px 30px;background: #FFF;}
+.accredit_declare{height: 42px;margin: 12px 0;border-bottom: 1px solid #ededed;line-height: 40px;color:#333;font-size: 14px;font-family: "Microsoft YaHei";}
+.accredit_reason{color:#666;}
+.accredit_img{height: 65px;margin:12px 0;overflow:hidden;background:url(/assets/images/jumei/global/global_accredit.png?v1) no-repeat;}
+.accredit_light_font{color:#aaa;}
+.accredit_content dt,.accredit_content dd{height: 25px;line-height: 25px;}
+.accredit_footer{height: 93px;}
+.accredit_account_info{float:right;margin-right: 15px;}
+.accredit_agree{height: 30px;line-height: 30px;text-align: center;}
+.accredit_agree a{margin-left:5px;}
+#j_accredit_accept{vertical-align:middle;}
+.accredit_act{text-align: center;}
+.accredit_act .formbutton,.accredit_cancel{width:100px;vertical-align:top;font-size: 16px;font-family: "Microsoft YaHei";}
+.accredit_act .formbutton{height:35px;margin-right: 20px;border:none;}
+.accredit_cancel {display: inline-block;height:33px;line-height: 35px;border: 1px solid #e0e0e0;background: #fcfcfc;text-align: center;color: #999999;}
+
+#footer_container {background: none repeat scroll 0 0 #F7F7F7;overflow: hidden;}
+.footer-top {padding: 20px 0;text-align: center;}
+.footer_con {background: none repeat scroll 0 0 #57214C;height: 225px;width:100%;}
+.footer_links_con {margin: 0 auto;width: 960px;}
+.footer_links {border-right: 1px solid #672A5B;display: inline;float: left;height: 83px;margin: 33px 0 28px;padding: 4px 51px 0 43px;}
+.footer_links h1 {color: #FCFCFD;display: inline;float: left;font-size: 14px;height: 25px;line-height: 25px;margin-right: 18px;}
+.footer_links ul {display: inline;float: left;}
+.footer_links ul li a {color: #FCFCFD;display: block;height: 25px;line-height: 25px;width: 48px;}
+.footer_links_no {border: 0 none;}
+.footer_copy_box {margin: 0 auto;text-align: center;width: 960px;}
+.footer_copy_con {color: #F2F2F2;line-height: 24px;padding: 10px 0;}

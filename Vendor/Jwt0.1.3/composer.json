@@ -1,0 +1,29 @@
+{
+    "name": "Jwt",
+    "description": "JSON WEB TOKENS",
+    "type":"library",
+    "config":{
+        "vendor-dir": "Vendor",
+        "secure-http": false
+    },
+    "keywords": ["jwt"],
+    "authors": [
+        {
+            "name": "jingd",
+            "email": "jingd3@jumei.com"
+        }
+    ],
+    "repositories":[
+        {
+            "packagist":false
+        },
+        {
+            "type": "composer",
+            "url": "http://packagist.int.jumei.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
+

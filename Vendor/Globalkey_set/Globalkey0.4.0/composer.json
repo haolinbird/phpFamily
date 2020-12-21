@@ -1,0 +1,29 @@
+{"name": "Globalkey",
+ "description": "解决sharding的全局id生成问题",
+ "authors": [{"name":"libingw", "email": "libingw@jumei.com", "homepage": "http://wiki.int.jumei.com", "role": "STM"},
+             {"name":"chaos.su", "email": "suchaoabc@163.com", "role": "STM"}
+ ],
+ "type":"library",
+ "config":{"vendor-dir": "Vendor"}
+ ,
+ "repositories":[{"packagist":false},
+ 		 {"type": "composer",
+		  "url": "http://packagist.int.jumei.com/"
+		  }
+ ],
+ "scripts":{
+ "post-update-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php",
+ "post-install-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php"
+ },
+
+"require":{
+"php": ">5.3",
+"Db": ">=1.0.0"
+}
+,
+ "require-dev":{
+    "php": ">5.3",
+    "Bootstrap": ">=1.0.0",
+    "Db": ">=1.0.0"
+ }
+}

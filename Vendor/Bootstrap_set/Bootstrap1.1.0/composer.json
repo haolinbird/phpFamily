@@ -1,0 +1,15 @@
+{"name": "Bootstrap",
+ "description": "PHP项目启动初始化过程相关脚本",
+ "authors": [{"name":"Chaos Su", "email": "chaos@jumei.com", "homepage": "http://wiki.int.jumei.com", "role": "STM"}], 
+ "type":"library",
+ "config":{"vendor-dir": "Vendor"}
+ ,
+ "repositories":[{"packagist":false},
+ 		 {"type": "composer",
+		  "url": "http://packagist.int.jumei.com/"
+		  }
+ ],
+   
+ "require":{
+ }
+}

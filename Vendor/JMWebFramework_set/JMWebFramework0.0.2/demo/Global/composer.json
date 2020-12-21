@@ -1,0 +1,31 @@
+{"name":"Global",
+ "description": "Global项目示例",
+ "config":{
+  "vendor-dir": "Vendor",
+  "secure-http": false
+}
+ ,
+ "repositories": [
+ 	{"packagist": false}
+	,
+        {
+            "type": "composer",
+            "url": "http://packagist.int.jumei.com/"
+        }
+    ]
+    ,
+ "scripts":{
+    "post-update-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php",
+    "post-install-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php"
+ },
+ "require": {
+      "JMWebFramework": ">=0.0.1",
+      "Bootstrap":">=1.0.0",
+      "PHPClient":">=1.1.2",
+      "Memcache":"0.2.0",
+      "Redis":"0.2.0",
+      "Thrift":"1.1.3",
+      "MNLogger":"0.4.0",
+      "Model":">=0.2.0"
+  }
+}	

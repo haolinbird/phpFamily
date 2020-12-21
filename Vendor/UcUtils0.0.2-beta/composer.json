@@ -1,0 +1,32 @@
+{
+    "name":"UcUtils",
+    "description":"用户中心工具组件",
+    "type" : "library",
+    "authors": [
+        {
+            "name":"郝林",
+            "email": "linh@jumei.com",
+            "role": "Developer"
+        },
+        {
+            "name":"章满阳",
+            "email": "manyangz@jumei.com",
+            "role": "Developer"
+        }
+    ],
+    "config":{
+        "vendor-dir":"Vendor"
+    },
+    "repositories":[
+        {
+            "packagist":false
+        },
+        {
+            "type":"composer",
+            "url":"http://packagist.int.jumei.com/"
+        }
+    ],
+    "require":{
+        "Bootstrap":">=1.0.0"
+    }
+}

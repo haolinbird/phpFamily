@@ -1,0 +1,33 @@
+{
+    "name":"RiskAntiFraudUtil",
+    "description":"验签组件",
+    "type" : "library",
+    "authors": [
+        {
+            "name":"刘超",
+            "email": "chaol1@jumei.com",
+            "role": "Developer"
+        },
+        {
+            "name":"章满阳",
+            "email": "manyangz@jumei.com",
+            "role": "Developer"
+        }
+    ],
+    "config":{
+        "vendor-dir":"Vendor"
+    },
+    "repositories":[
+        {
+            "packagist":false
+        },
+        {
+            "type":"composer",
+            "url":"http://packagist.int.jumei.com/"
+        }
+    ],
+    "require":{
+        "Bootstrap":">=1.0.0",
+        "PHPClient":">=1.4.5 "
+    }
+}

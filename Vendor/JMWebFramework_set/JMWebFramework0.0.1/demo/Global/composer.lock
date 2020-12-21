@@ -1,0 +1,287 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c83f68faa3e8f29e61855e33e0814700",
+    "content-hash": "396179cc4357a49d3f75f2139078343d",
+    "packages": [
+        {
+            "name": "Bootstrap",
+            "version": "1.1.0",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/Common/PHP/Bootstrap",
+                "reference": "1fe9665e1c68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Bootstrap/Bootstrap-1fe9665e1c68.zip",
+                "reference": "1fe9665e1c68",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "authors": [
+                {
+                    "name": "Chaos Su",
+                    "email": "chaos@jumei.com",
+                    "homepage": "http://wiki.int.jumei.com",
+                    "role": "STM"
+                }
+            ],
+            "description": "PHP项目启动初始化过程相关脚本",
+            "time": "2016-03-09 18:15:43"
+        },
+        {
+            "name": "Db",
+            "version": "1.4.3",
+            "source": {
+                "type": "hg",
+                "url": "ssh://code@code.int.jumei.com/Db",
+                "reference": "2942be45dc44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Db/Db-2942be45dc44.zip",
+                "reference": "2942be45dc44",
+                "shasum": ""
+            },
+            "require": {
+                "log": ">=0.1.0",
+                "mnlogger": ">=0.2.0"
+            },
+            "require-dev": {
+                "bootstrap": "1.0.1",
+                "log": ">=0.1.0",
+                "mnlogger": ">=0.2.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "authors": [
+                {
+                    "name": "Chaos Su",
+                    "email": "chaos@jumei.com",
+                    "homepage": "http://wiki.int.jumei.com",
+                    "role": "STM"
+                }
+            ],
+            "description": "数据库访问层",
+            "time": "2016-12-02 21:20:52"
+        },
+        {
+            "name": "JMWebFramework",
+            "version": "0.0.1",
+            "source": {
+                "type": "hg",
+                "url": "ssh://code@code.int.jumei.com/JMWebFramework",
+                "reference": "5ef6c530a893"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/JMWebFramework/JMWebFramework-5ef6c530a893.zip",
+                "reference": "5ef6c530a893",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "description": "聚美Web基础框架",
+            "time": "2017-03-13 17:44:01"
+        },
+        {
+            "name": "Log",
+            "version": "0.1.4",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/Common/PHP/Log",
+                "reference": "5f4c5f1cee9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Log/Log-5f4c5f1cee9c.zip",
+                "reference": "5f4c5f1cee9c",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "authors": [
+                {
+                    "name": "Chaos Su",
+                    "email": "chaos@jumei.com",
+                    "homepage": "http://wiki.int.jumei.com",
+                    "role": "STM"
+                }
+            ],
+            "description": "日志记录组件",
+            "time": "2016-04-11 17:38:38"
+        },
+        {
+            "name": "MNLogger",
+            "version": "0.4.0",
+            "source": {
+                "type": "hg",
+                "url": "ssh://code@code.int.jumei.com/mnlogger",
+                "reference": "09c5acf9206c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/MNLogger/MNLogger-09c5acf9206c.zip",
+                "reference": "09c5acf9206c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "description": "监控系统客户端",
+            "time": "2014-08-20 12:11:42"
+        },
+        {
+            "name": "Memcache",
+            "version": "0.2.0",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/DDAL/PHP/Memcache",
+                "reference": "3cc4814f6b8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Memcache/Memcache-3cc4814f6b8b.zip",
+                "reference": "3cc4814f6b8b",
+                "shasum": ""
+            },
+            "require": {
+                "mnlogger": ">=0.4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "authors": [
+                {
+                    "name": "Chaos Su",
+                    "email": "chaos@jumei.com",
+                    "homepage": "http://wiki.int.jumei.com",
+                    "role": "STM"
+                }
+            ],
+            "description": "Memcache访问组件",
+            "time": "2014-08-20 12:07:04"
+        },
+        {
+            "name": "Model",
+            "version": "0.2.0",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/DDAL/PHP/Model",
+                "reference": "08f36dabfee5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Model/Model-08f36dabfee5.zip",
+                "reference": "08f36dabfee5",
+                "shasum": ""
+            },
+            "require": {
+                "db": ">=1.0.0"
+            },
+            "require-dev": {
+                "bootstrap": ">=1.0.0",
+                "db": ">=1.0.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "description": "数据处理层的基础封装",
+            "time": "2014-10-31 20:47:49"
+        },
+        {
+            "name": "PHPClient",
+            "version": "1.3.4",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/RPC-PHP/PHPClient",
+                "reference": "b8c2d5cf8b40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/PHPClient/PHPClient-b8c2d5cf8b40.zip",
+                "reference": "b8c2d5cf8b40",
+                "shasum": ""
+            },
+            "require": {
+                "mnlogger": "0.4.0"
+            },
+            "require-dev": {
+                "bootstrap": ">=1.0.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "description": "Jumei PHP Rpc 客户端 ",
+            "time": "2015-12-07 15:13:03"
+        },
+        {
+            "name": "Redis",
+            "version": "0.2.0",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/DDAL/PHP/Redis",
+                "reference": "7f66daceba0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Redis/Redis-7f66daceba0c.zip",
+                "reference": "7f66daceba0c",
+                "shasum": ""
+            },
+            "require": {
+                "mnlogger": ">=0.4.0",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "authors": [
+                {
+                    "name": "郭新华",
+                    "email": "xinhuag@jumei.com",
+                    "role": "STM"
+                }
+            ],
+            "description": "Redis访问组件",
+            "time": "2014-08-20 12:09:52"
+        },
+        {
+            "name": "Thrift",
+            "version": "1.1.3",
+            "source": {
+                "type": "hg",
+                "url": "https://hg.int.jumei.com/Arch_Groups/RPC-PHP/Thrift",
+                "reference": "1bc6fd77258f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.int.jumei.com/jmzip/Thrift/Thrift-1bc6fd77258f.zip",
+                "reference": "1bc6fd77258f",
+                "shasum": ""
+            },
+            "require": {
+                "mnlogger": "0.4.0"
+            },
+            "type": "library",
+            "notification-url": "http://packagist.int.jumei.com/downloads/%package%",
+            "description": "Jumei Thrift协议的客户端 ",
+            "time": "2014-09-12 13:53:51"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

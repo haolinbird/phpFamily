@@ -1,0 +1,21 @@
+{"name":"Model",
+    "type":"library",
+    "description":"数据处理层的基础封装",
+    "config":{"vendor-dir": "Vendor"},
+    "repositories":[{"packagist":false},
+        {"type": "composer",
+            "url": "https://packagist.int.jumei.com/"
+        }
+    ],
+    "scripts":{
+        "post-update-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php",
+        "post-install-cmd":"rm -rf Vendor/composer && rm -rf Vendor/autoload.php"
+    },
+    "require": {
+        "Db": ">=1.0.0"
+    },
+    "require-dev": {
+        "Bootstrap":">=1.0.0",
+        "Db": ">=1.0.0"
+    }
+}

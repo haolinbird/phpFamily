@@ -1,0 +1,15 @@
+{"name": "Log",
+ "description": "日志记录组件",
+ "authors": [{"name":"粟超", "email": "chaos@jumei.com", "homepage": "http://wiki.int.jumei.com", "role": "STM"}], 
+ "type":"library",
+ "config":{"vendor-dir": "Vendor"}
+ ,
+ "repositories":[{"packagist":false},
+ 		 {"type": "composer",
+		  "url": "http://packagist.int.jumei.com/"
+		  }
+ ],
+   
+ "require":{
+ }
+}

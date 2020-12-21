@@ -1,0 +1,9 @@
+{
+    "name": "MNLogger",
+    "description": "监控系统客户端",
+    "type": "library",
+    "config": {"vendor-dir": "Vendor"},
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

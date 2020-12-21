@@ -1,0 +1,92 @@
+syntax = "proto2";
+
+package ProductUtils.Cart;
+
+message Deal {
+     required string category = 1;
+     required string short_name = 2;
+     required string brand_id = 3;
+     required string product_id = 4;
+     required string shipping_system_id = 5;
+     required string shipping_system_type = 6;
+     required string shipping_system_name = 7;
+     required string delivery_fee = 8;
+     required string original_price = 9;
+     required string item_price = 10;
+     required string end_time = 11;
+     required string iwc = 12;
+     required string user_purchase_limit = 13;
+     required string show_category = 14;
+     required string special_deal_group_name = 15;
+     required string categoryv33 = 16;
+     required string categoryv32 = 17;
+     required string categoryv31 = 18;
+     required string categoryv34 = 19;
+     required string site = 20;
+     required string media_rebate_ratio = 21;
+     required string real_buyer_number = 22;
+     required string platform = 23;
+     required string sale_forms = 24;
+     required string member_purchase_limit = 25;
+     required string gift_type = 26;
+     required string sale_type = 27;
+     required string sale_model = 28;
+     required string start_time = 29;
+     required string is_pre_sale = 30;
+     required string deposit = 31;
+     required string payment_end_time = 32;
+     required string payment_start_time = 33;
+     required string deal_tags = 34;
+     required string stocks = 35;
+     required string status = 36;
+     required string hash_id = 37;
+     required string extension_id = 38;
+     required string virtual_goods_id = 39;
+     required string vip_price_end_time = 40;
+     required string vip_price_start_time = 41;
+     required string gold_member_price = 42;
+     required string platinum_member_price = 43;
+     required string diamond_member_price = 44;
+     required string sr = 45;
+     required string md5 = 46;
+}
+
+message Mall {
+     required string category = 1;
+     required string short_name = 2;
+     required string brand_id = 3;
+     required string product_id = 4;
+     required string shipping_system_id = 5;
+     required string shipping_system_type = 6;
+     required string shipping_system_name = 7;
+     required string iwc = 8;
+     required string category_v3_3 = 9;
+     required string category_v3_2 = 10;
+     required string category_v3_1 = 11;
+     required string category_v3_4 = 12;
+     required string mall_id = 13;
+     required string sale_type = 14;
+     required string sale_model = 15;
+     required string status = 16;
+     required string sale_price = 17;
+     required string sale_end_time = 18;
+     required string sale_start_time = 19;
+     required string vip_price_end_time = 20;
+     required string vip_price_start_time = 21;
+     required string gold_member_price = 22;
+     required string platinum_member_price = 23;
+     required string diamond_member_price = 24;
+     required string sr = 25;
+     required string md5 = 26;
+}
+
+message Tpi {
+     required string attribute = 1;
+     required string size = 2;
+     required string tpi_stocks = 3;
+     required string sku_category = 4;
+     required string product_type = 5;
+     required string product_tags = 6;
+     required string mall_price = 7;
+     required string md5 = 8;
+}

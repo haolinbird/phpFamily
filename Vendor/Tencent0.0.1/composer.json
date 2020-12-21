@@ -1,0 +1,29 @@
+{
+    "name": "Tencent",
+    "description": "腾讯云相关SDK",
+    "type":"library",
+    "config":{
+        "vendor-dir": "Vendor",
+        "secure-http": false
+    },
+    "keywords": ["tencent"],
+    "authors": [
+        {
+            "name": "jingd",
+            "email": "jingd3@jumei.com"
+        }
+    ],
+    "repositories":[
+        {
+            "packagist":false
+        },
+        {
+            "type": "composer",
+            "url": "http://packagist.int.jumei.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
+

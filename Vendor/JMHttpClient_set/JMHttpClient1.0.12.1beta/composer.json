@@ -1,0 +1,13 @@
+{
+    "name": "JMHttpClient",
+    "config": {
+        "vendor-dir": "Vendor"
+    },
+    "authors": [
+        {
+            "name": "xianwang song",
+            "email": "xianwang.song@qq.com"
+        }
+    ],
+    "require": {}
+}

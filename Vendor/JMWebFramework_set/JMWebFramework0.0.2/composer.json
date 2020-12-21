@@ -1,0 +1,17 @@
+{"name":"JMWebFramework",
+ "description": "聚美Web基础框架",
+ "config":{"secure-http": false}
+ ,
+ "repositories": [
+ 	{"packagist": false}
+	,
+        {
+            "type": "composer",
+            "url": "http://packagist.int.jumei.com/"
+        }
+    ]
+    ,
+ "require": {
+    "php" : ">=5.3.0"
+  }
+}	

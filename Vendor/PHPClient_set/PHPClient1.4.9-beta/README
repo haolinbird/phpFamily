@@ -1,0 +1,96 @@
+# PHPClient
+## 1.4.9-beta
+* 增加"非lark模式时,对service字段的处理.
+
+## 1.4.8-beta
+* 直连失败，尝试MCPD也失败时，日志里打印直连地址及相关堆栈信息.
+* 连接错误信息里包含连接地址.
+
+## 1.4.7-beta
+* lark 连接失败时记录原因到日志里
+* 修复RpcClientd调用方式下只会固定走lark的问题
+* 修复mnlogger日志格式的问题
+* 兼容老的RPC调用方式.
+
+## 1.4.6-beta
+* 支持传递超时参数给lark
+* TLV协议增加context字段,支持额外信息,真实的远端地址等.
+
+## Version: 1.4.5-beta
+* 支持lark协议
+* json序列化失败抛出异常
+
+## 特性(v1.4.3-beta)
+* 配合支持全链路日志，修复对服务器返回异常判别有误的问题
+* 支持每个项目使用单独的recv_time_out配置, 特定的项目未配置recv_time_out时使用原有的公共recv_time_out配置.
+## 特性(v1.4.2 基于v1.4.2-beta-2)
+* 修复抛出异常信息时rpcUri存在误导的问题
+* 在recv_time_out的基础上加入recv_time_out_offset,为接收mcpd异常增加冗余时间
+## 特性(v1.4.2-beta-1)
+* 修复失败重试的问题,仅在联系MCPD失败时才进行重试
+* 支持向mcpd传递recv_time_out
+## 特性(v1.4.1-beta-11)
+* 支持MCP连接池
+## 特性(v1.3.5)
+* 客户端负载均衡
+* 故障节点自动剔除及健康嗅探
+* 支持权重设置
+* 支持异步调用
+* 兼容旧版调用方式
+> **提示** :异步不支持旧版调用方式
+## 配置
+``` php
+        <?php
+        namespace Config;
+        class PHPClient
+        {
+            // rpc_secret_key
+            public $rpc_secret_key = '769af463a39f077a0340a189e9c1ec28';
+            
+            public $User = array(
+                // 客户端负载均衡，注意只有PHPClient版本大于等于1.1.5才支持客户端负载均衡       
+                'uri'=>array(
+                    '172.20.4.56:2219', // 格式为 节点ip:端口:权重
+                ),
+                'user' => 'Optool',   //调用者
+                'secret' => '{1BA09530-F9E6-478D-9965-7EB31A59537E}',
+
+                // 使用连接池时需要填写下列参数
+                'service' => '', // 服务名称
+                'dove_key' => '', // dove配置的名称，根据这个名称能拿到服务列表
+                // 客户端接收超时设置 单位秒.
+                // v1.4.3-beta版本支持, 可以选择每个项目使用不同的recv_time_out配置.
+                'recv_time_out' => 10,
+            );
+        }
+```
+## 示例
+* 方式一(推荐)
+``` php
+define('USE_CONNECT_POOL', true); // 为true表示使用连接池.
+define('MCP_SERVER', 'tcp://xxx.xxx.xxx.xxx:port'); // 连接池配置 未定义MCP_SERVER(或为空)常量时会尝试使用redis.proxy.host/redis.proxy.port配置
+$data = \PHPClient\Text::inst('User')->setClass('Info')->byUid(5100);
+```
+> 如果是老的客户端(不使用handler规范),需在配置中加上小于2的版本号，如：`'ver'=>1.0`, 参考example中的config文件
+* 方式二(旧版)
+``` php
+define('USE_CONNECT_POOL', true); // 为true表示使用连接池.
+define('MCP_SERVER', 'tcp://xxx.xxx.xxx.xxx:port'); // 连接池配置 未定义MCP_SERVER(或为空)常量时会尝试使用redis.proxy.host/redis.proxy.port配置
+$data = RpcClient_User_Info::instance()->byUid(5100);
+```
+### 同步调用
+> 上述两种方法均为同步调用
+### 异步调用
+``` php
+define('USE_CONNECT_POOL', true); // 为true表示使用连接池.
+define('MCP_SERVER', 'tcp://xxx.xxx.xxx.xxx:port'); // 连接池配置 未定义MCP_SERVER(或为空)常量时会尝试使用redis.proxy.host/redis.proxy.port配置
+
+$request1 = \PHPClient\Text::inst('User')->setAsyncClass('Info')->byUid(5100);
+$request2 = \PHPClient\Text::inst('User')->setAsyncClass('Info')->byName('Nickle');
+//服务端已在同时处理request1 和request2的请求.
+/*..... 其他业务逻辑.....*/
+//获取异步调用的结果。
+$result1 = $request1->result; //阻塞，直至服务端返回request1的结果。
+$result2 = $request2->result;
+``` 
+

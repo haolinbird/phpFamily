@@ -1,0 +1,16 @@
+{"name": "EventClient",
+ "description": "消息中心客户端",
+ "authors": [{"name":"粟超", "email": "chaos@jumei.com"}], 
+ "type":"library",
+ "config":{"vendor-dir": "Vendor"}
+ ,
+ "repositories":[{"packagist":false},
+ 		 {"type": "composer",
+		  "url": "http://packagist.int.jumei.com/"
+		  }
+ ],
+   
+ "require":{
+	 "php":">=5.3.0"
+ }
+}

@@ -1,0 +1,24 @@
+{"name": "Db",
+ "description": "数据库访问层",
+ "authors": [{"name":"Chaos Su", "email": "chaos@jumei.com", "homepage": "http://wiki.int.jumei.com", "role": "STM"}], 
+ "type":"library",
+ "config":{"vendor-dir": "Vendor"}
+ ,
+ "repositories":[{"packagist":false},
+ 		 {"type": "composer",
+		  "url": "http://packagist.int.jumei.com/"
+		  }
+ ],
+   
+ "require":{
+       "MNLogger":">=0.2.0",
+       "Log":">=0.1.0"
+ }
+,
+ "require-dev":{
+       "MNLogger":">=0.2.0",
+       "Log":">=0.1.0",
+       "Bootstrap": "1.0.1"
+ }
+
+}
