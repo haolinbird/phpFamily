@@ -1,0 +1,44 @@
+{
+    "name":"passport-service",
+
+    "description":"passport-service composer",
+
+    "config":{
+        "vendor-dir":"Vendor",
+        "secure-http": false
+    },
+
+    "repositories":[
+        {
+            "packagist":false
+        },
+        {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        },
+        {
+            "type":"composer",
+            "url":"http://packagist.int.xiaonianyu.com/"
+        }
+    ],
+
+    "scripts":{
+        "post-update-cmd":"cp pre-commit.phpcs.example .git/hooks/pre-commit",
+        "post-install-cmd":"cp pre-commit.phpcs.example .git/hooks/pre-commit"
+    },
+
+    "require":{
+        "Bootstrap":"1.1.0",
+        "PHPClient":"1.3.5",
+        "Db": "1.2.6",
+        "Redis": "0.4.6-beta",
+        "MNLogger":"0.4.2",
+        "Model":"0.2.0",
+        "Globalkey": "0.4.3-beta",
+        "JmArchiTracker": "0.1.0-beta",
+        "Log": "0.1.5-beta",
+        "elasticsearch/elasticsearch": "7.3.0",
+        "monolog/monolog": "~2.0",
+        "fukuball/jieba-php": "dev-master"
+    }
+}

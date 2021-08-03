@@ -1,0 +1,6 @@
+.idea/
+Vendor/
+composer.lock
+Config/*.php
+!Config/*.schema.php
+Logs/*
