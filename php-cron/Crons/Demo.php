@@ -19,6 +19,17 @@ class Demo extends ProcessBase
     /**
      * 处理数据.
      *
+     * 分发程序 用于分组待处理数据传递子进程归约.
+     * @return boolean
+     */
+    public function map()
+    {
+
+    }
+
+    /**
+     * 处理数据.
+     *
      * @param array $params 子进程入参
      *
      * @return void
@@ -26,13 +37,11 @@ class Demo extends ProcessBase
      */
     public function run($params = [])
     {
-        // 接收脚本参数
-        $option = \Util\CliOptions::ParseFromArgv();
-        // 获取命令行参数
-        $testParams = $option->getOption('test_params');
+        // 获取脚本参数
+        $processNum = $this->getCronParams('processNum',5);
 
         echo "run demo, start_runtime:".date('Y-m-d H:i:s')."\r\n";
-        echo "cli_params:".$testParams."\r\n";
+        echo "processNum:".$processNum."\r\n";
     }
 
 }

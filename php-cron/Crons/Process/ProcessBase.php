@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 多进程基本类
+ * 多进程基础类
  * @author Lin Hao<lin.hao@xiaonianyu.com>
  * @date 2021-07-30 21:04:11
  */
@@ -21,6 +21,9 @@ abstract class ProcessBase
 
     // 父进程传递给子进程的入参
     private $currentProcessParams = [];
+
+    // 脚本入参
+    private $options = null;
 
     /**
      * 构造函数.
@@ -83,11 +86,14 @@ abstract class ProcessBase
             }
         });
 
+        // 接收脚本参数
+        $this->options = \Util\CliOptions::ParseFromArgv();
+
         // 启动之前的初始化操作
         $this->beforeRun();
 
         // 判断
-        if (function_exists('pcntl_fork') && $this->getProcessNum() > 1) {
+        if (function_exists('pcntl_fork') && $this->maxProcessNum > 1) {
             while (true) {
                 $this->currentProcessNum++;
 
@@ -145,6 +151,19 @@ abstract class ProcessBase
      */
     public function parentProcess()
     {
+    }
+
+    /**
+     * 获取脚本入参.
+     *
+     * @param string $paramsName 参数名.
+     * @param mixed  $default    默认值.
+     *
+     * @return void
+     */
+    public function getCronParams($paramsName, $default = null)
+    {
+        return $this->options->getOption($paramsName, $default);
     }
 
     /**

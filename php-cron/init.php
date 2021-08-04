@@ -36,8 +36,3 @@ require ROOT_PATH.'/Vendor/Bootstrap/Autoloader.php';
 require ROOT_PATH.'/Vendor/autoload.php';
 require_once(ROOT_PATH.'/Vendor/PHPClient/JMTextRpcClient.php');
 \Bootstrap\Autoloader::instance()->addRoot(ROOT_PATH)->init();
-
-// 加载全局函数
-require ROOT_PATH.'/Common/function.php';
-
-define('JM_APP_NAME', 'php-cron');
